@@ -1,0 +1,9 @@
+{
+  "name": "Kali GUI",
+  "build": { "dockerfile": "../Dockerfile" },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": { "label": "افتح ده عشان تشوف كالي", "onAutoForward": "openBrowser" }
+  },
+  "hostRequirements": { "cpus": 2, "memory": "4gb" }
+}
